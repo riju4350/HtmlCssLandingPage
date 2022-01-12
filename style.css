@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding:0;
+}
+header{
+    background-color: #562EFF;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:94px;
+    width:80%;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+.link-style{
+    text-decoration: none;
+    padding:20px;
+    color:white;
+}
+.link-bold{
+    /* font-weight: 700; */
+    font-size: 36px;
+}
