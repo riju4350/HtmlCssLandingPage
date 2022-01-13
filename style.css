@@ -16,6 +16,7 @@ main{
         background-color:#ffffff;
         width: 870px;
         padding:30px; 
+        margin-top: 20px;
 }
 .section-title{
     color:#562EFF;
@@ -24,6 +25,7 @@ main{
 }
 
 header{
+    /* width: 870px; ami dici */
     background-color: #562EFF;
 }
 nav{
@@ -140,4 +142,40 @@ hr{
     border-radius: 15px;
     color: #FF4A60;
     /* margin-bottom: 10px; */
+}
+
+/* -----------media query----------- */
+
+@media only screen and (max-width:688px){
+    header{
+        width:100%;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .container{
+        width:100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }  
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    } 
 }
